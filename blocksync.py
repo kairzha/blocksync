@@ -364,7 +364,7 @@ if __name__ == "__main__":
     parser.add_option("-n", "--dryrun", dest = "dryrun", action = "store_true", help = "do a dry run (don't write anything, just report differences)", default = False)
     parser.add_option("-T", "--createdest", dest = "createdest", action = "store_true", help = "create destination file using truncate(2). Should be safe for subsequent syncs as truncate only modifies the file when the size differs", default = False)
     parser.add_option("-S", "--script", dest = "script", help = "location of script on remote host (otherwise current script is sent over)")
-    parser.add_option("-I", "--interpreter", dest = "interpreter", help = "[full path to] interpreter used to invoke remote server (defaults to python2)", default = "python2")
+    parser.add_option("-I", "--interpreter", dest = "interpreter", help = "[full path to] interpreter used to invoke remote server (defaults to python2)", default = "python3")
     parser.add_option("-t", "--interval", dest = "interval", type = "int", help = "interval between stats output (seconds, defaults to 1)", default = 1)
     parser.add_option("-o", "--output", dest = "outfile", help = "send output to file instead of console")
     (options, args) = parser.parse_args()
